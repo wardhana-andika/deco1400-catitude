@@ -1,0 +1,157 @@
+<!doctype HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/jquery.slides.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgMX23avWFEHgZFOz1fpjllvpKk5hPh0"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="header">
+				<a href="index.html">
+					<img id="banner" src="images/catitude.png" alt="Cattitude Banner" />
+				</a>
+			</div>
+			
+			
+			<div id="nav">
+				<ul class="navi">
+					<li><a href="services.html">Services</a></li>
+					<li><a href="profiles.html">Client Profiles</a></li>
+					<li><a href="faqs.html">Tips & FAQs</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li class="currentpage"><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			
+			
+			
+		
+			<div id="content">
+			
+				<div class="contentheader">
+					<p class="contentheader"> Contact Us </p>
+					
+				</div>
+				
+				<div class="contentleft">
+					<p class="parheader"> Contact Information </p>
+					
+					
+						<dl>
+							<dt>Address</dt>
+								<dd>3 Zamia St Sunnybank QLD 4109</dd>
+							<dt>Phone</dt>
+								<dd>07 3412 1808</dd>
+						</dl>
+					
+					
+					
+					
+					<div class="enquiry">
+						<p class="parheader"> Got a Question? </p>
+						
+						<form id="enquiry" method="GET" onsubmit="return validateForm1()">
+							<fieldset>
+								<legend>Enquiry Form</legend>
+								<label>Name: </label>
+								<input type="text" name="name">
+								<br /><br />
+								
+								<label>Email: </label>
+								<input type="text" name="email">
+								<br /><br />
+								
+								<label>Topic: </label>
+								<select>
+								  <option value="services">Services</option>
+								  <option value="pricing">Pricing</option>
+								  <option value="other">Other</option>
+								</select>
+								<br /><br />
+								
+								<label>Enquiry: </label>
+								<textarea></textarea>
+								<br /><br />
+								
+								<div class="buttondiv">
+									<input type="submit" value="Submit Enquiry">
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					
+					<div class="booking">
+					
+						<p class="parheader">Book an Appointment Today!</p>
+						
+						<form id="booking" method="GET" onsubmit="return validateForm2()">
+							<fieldset>
+								<legend>Appointment Form</legend>
+								<label>Name: </label>
+								<input type="text" name="name">
+								<br /><br />
+								
+								<label>Phone: </label>
+								<input type="text" name="phone">
+								<br /><br />
+								
+								<label>Email: </label>
+								<input type="text" name="email">
+								<br /><br />
+								
+								<label>First Time Visitor? </label>
+								<input type="checkbox" name="first" value="firsttime">
+								<br /><br />
+								
+								<label>Additional Information: </label>
+								<textarea></textarea>
+								<br /><br />
+								
+								<div class="buttondiv">
+									<input type="submit" value="Book an Appointment">
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					
+					<div class="contactform">
+					
+					</div>
+				</div>
+			
+				<div class="contentright">
+					<p class="parheader"> Clinic Location </p>
+					
+					<p>Please use the map below to view the clinic's location. If you can't view the map, please click <a class="inlinelink" href="https://www.google.com.au/maps/place/3+Zamia+St,+Sunnybank+QLD+4109/@-27.57084,153.06053,17z/data=!3m1!4b1!4m2!3m1!1s0x6b9145279837d8d9:0xe602d6dae3a26ec5">here</a> instead.</p>
+					
+					<div id="map-canvas">
+					</div>
+				</div>
+			
+			</div>
+			
+		
+			<div id="footer">
+			
+				<div id="footercontent">
+					<ul class="navf">
+							<li><a href="index.html">home</a></li>
+							<li><a href="#">privacy policy</a></li>
+							<li><a href="#">terms & conditions</a></li>
+							<li><a href="#">© 2015 Cattitude</a></li>
+					</ul>
+				</div>
+			</div>
+	
+		</div>
+	</body>
+</html>
